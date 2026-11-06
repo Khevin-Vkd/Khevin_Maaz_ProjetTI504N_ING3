@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel= "stylesheet" href="../css/styles.css">
+    <title>Accueil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/script.js"></script>
+
+  </head>
+
+  <body>
+    
+    <header>
+
+        <nav>
+            <a href="Accueil.html">Accueil</a>
+            <a href="GreenITSiteWeb.html">Green IT & Sites web</a>
+            <a href="QuizGreenIT.html">Green IT - Quiz</a>
+            <a href="apropos.html">À propos</a>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        
+        <!-- Bloc gauche contenant les deux blocs empilés -->
+        <div class="bloc-gauche">
+    
+            <div class="sous-bloc">
+                <h1 class="titre"> Another day,</h1>
+                <h1 class="titre"> another Slay</h1>
+            </div>
+
+            <div class="sous-bloc">
+                <div id="question">
+                    <div class="recherche-rangee">
+                        <input class="recherche" type="text" placeholder="Mon humeur" required /><br />
+                        <input id="bouton" type="button" value="Envoyer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloc droit -->
+        <div class="bloc-droite">
+            <div class="cadre"></div>
+        </div>
+
+    </div>
+
+
+    <section>
+    <h1>What would look good on you</h1>
+    <p id="representation">Here are 3 recommendations based from your current mood</p>
+    </section>
+
+    <div class="rangee">
+        <div class="cadre">
+        <img src="../img/outfit2.jpg" alt="Outfit" />
+        </div>
+
+        <div class="cadre">
+        <img src="../img/outfit2.jpg" alt="Outfit" />
+        </div>
+        
+        <div class="cadre">
+        <img src="../img/outfit2.jpg" alt="Outfit" />
+        </div>
+    </div>
+
+    <section>
+        <div class="rangee">
+        
+        <div class="cadre">
+        <img src="../img/outfit2.jpg" alt="Outfit" />
+        </div>
+        
+        <div class ="recommendation">
+        <h2>The makeup that best fit  </h2>
+        <p> It can be difficult to find the right makeup for your skin tone and style. Here are some recommendations based on your current mood.</p>
+        </div>
+        
+        </div>
+    </section>    
+
+    <section>
+        <div class="rangee">
+        
+        <div class ="recommendation">
+        <h2>A hairstyle that is giving  </h2>
+        <p> Outfits do not define your whole look, and a great hairstyle can make all the difference.</p>
+        </div>
+            
+        <div class="cadre">
+        <img src="../img/outfit2.jpg" alt="Outfit" />
+        </div>
+        
+        
+        </div>
+    </section> 
+
+    <section id="diviseur-1">
+        <div class="line">
+            <h3>Anything to check in your closet?</h3>
+            <p>Take inspiration from your wardrobe</p>
+        </div>
+
+        <div class="diviseur-carrousel">
+            <div class="carousel" aria-label="Wardrobe outfit carousel">
+                <div class="carousel-track">
+                    <!-- Keep these paths if the images are in ../img relative to this HTML file. -->
+                    <div class="slide"><img src="../img/outfit.jpg" alt="Outfit 1"></div>
+                    <div class="slide"><img src="../img/outfit2.jpg" alt="Outfit 2"></div>
+                    <div class="slide"><img src="../img/cerisier.jpeg" alt="Outfit 3"></div>
+                </div>
+
+                <!-- CHANGED: Added button types and accessibility labels. -->
+                <button type="button" class="prev" aria-label="Previous image">&#9664;</button>
+                <button type="button" class="next" aria-label="Next image">&#9654;</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>©️2026 Khevin Vongkorad</p>
+        <p>Tous droits réservés.</p>
+        
+    </footer>
+
+  </body>
+</html>

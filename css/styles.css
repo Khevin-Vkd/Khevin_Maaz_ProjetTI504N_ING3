@@ -1,0 +1,460 @@
+
+
+header{
+
+    background-color: #fd96bd; 
+    opacity: 0.6;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        padding: 25px;
+
+    }
+
+}
+
+.container {
+  padding : 30px ;  
+  display: flex;
+  gap: 10px; /* Espace entre les blocs gauche et droit */
+  height: 300px; /* Hauteur exemple, à adapter */
+  margin-bottom: 50px;
+}
+
+.bloc-gauche {
+  display: flex;
+  flex-direction: column; /* Empile les enfants verticalement */
+  flex: 1; /* Prend l'espace restant ou une proportion définie */
+  gap: 10px; /* Espace entre les sous-blocs */
+}
+
+.bloc-droite {
+  width: 400px;
+  height: 320px;
+  margin-right: 130px;
+ 
+  .cadre{  
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ff7fb7;
+  background-color: #fd96bd;
+  margin-top: 20px;
+  margin-left: 50px;
+  }
+
+}
+
+.sous-bloc {
+  flex: 1; /* Les deux sous-blocs prennent chacun la moitié de la hauteur */
+  margin-left: 120px; 
+
+  .titre {
+    color: #ff7fb7;
+    font-family: 'Times New Roman';
+    text-align: left;
+    font-size: 60px;
+  }
+
+  .recherche-rangee {
+    display: flex;
+    padding-bottom: 20px; /* espace en bas de la rangée */
+  }
+
+  .recherche{
+    border: 1px solid #ff7fb7;;
+    border-radius: 0px;
+    width: 250px;
+    height: 40px;
+  }
+
+  .recherche::placeholder {
+  color: #ff7fb7;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  }
+
+  #bouton{
+    background-color: #ff7fb7;
+    color: white;
+    border: 1px solid #ff7fb7;;
+    border-radius: 0px;
+    width: 100px;
+    height: 44px;
+  }
+
+}
+
+
+#img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 200px;
+    padding: 15px;
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+    border-radius: 5px;
+
+}
+
+a:hover{
+    color: lightgreen;
+}
+
+nav > a{
+    font-size: 20px;
+
+}
+
+nav > a:hover{
+    color: white;
+    font-weight: bold;
+}   
+
+
+body{
+background-image: url("../img/cerisier.jpeg");   
+background-size: cover; 
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+justify-content: center;
+padding: 15px;
+
+}
+
+h1{
+        color: #ff7fb7;
+        text-align: center;
+    }
+
+section{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 700px;
+
+    h2{
+        color: #ff7fb7;
+        text-align: center;
+    }
+
+    h3 ~ h2{
+        color: #ff7fb7;
+        text-align: center;
+    }
+
+    a{
+            font-size: italic;
+            color: rgb(230, 79, 104);
+            text-decoration-line: underline;
+
+    }
+}
+
+/* Partie des photos */
+
+.rangee {
+  display: flex;
+  gap: 20px; /* espace entre les images */
+  justify-content: center; /* centre les images horizontalement */
+  padding-bottom: 20px; /* espace en bas de la rangée */
+}
+
+.cadre {
+  width: 250px;
+  height: 270px;
+  background: white; /* visible dans les espaces vides */
+}
+
+.cadre img {
+  width: 210px;
+  aspect-ratio: 1/1; /* Maintient un ratio 1:1 pour que l'image soit carrée */
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.recommendation {
+  max-width: 300px;
+}
+
+/* Les diviseurs */
+
+#diviseur {
+    background-color: #ff7fb7;
+    height: 200px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    margin-bottom: 50px;
+}
+
+.line {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Le carroussel */
+
+    /* CHANGED: The section adapts to its content and to narrow screens. */
+    #diviseur-1 {
+      background-color: #ff7fb7;
+      width: min(100%, 1000px);
+      margin: 0 auto 50px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .line {
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .diviseur-carrousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      /* CHANGED: Smooth sliding between images. */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      /* CHANGED: Every slide fills exactly one carousel width. */
+      flex: 0 0 100%;
+      min-width: 0;
+    }
+
+    .slide img {
+      display: block;
+      /* CHANGED: Removed padding-left that misaligned the pictures. */
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    /* NEW: Visual feedback when a button is hovered. */
+    .prev:hover, .next:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+/*  */
+
+#conseils{
+
+    h3{
+        color: rgb(230, 79, 104);
+    }
+}
+
+#representation{
+        text-align: center;
+}
+
+#citation{
+    font-weight:bold;
+
+}
+
+#postit{
+    display: flex;
+    flex-wrap : wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 1px;
+}
+
+.postit-item{
+    background-color: lightgreen;
+    width: 100px;
+    font-size: 0.5em;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 10;
+    color: green;
+    background-color: white;
+    text-align: left;
+
+    li{
+        padding: 5px;
+    }
+}
+
+.postit-item:hover > ul{
+        display: block;
+    }
+
+.postit-item:nth-child(1) { background-color: rgb(177, 220, 177); }    
+.postit-item:nth-child(2) { background-color: rgb(125, 234, 125); } 
+.postit-item:nth-child(3) { background-color: rgb(72, 243, 72); } 
+.postit-item:nth-child(4) { background-color: rgb(32, 147, 32); } 
+.postit-item:nth-child(5) { background-color: rgb(13, 78, 13); }    
+
+table{
+    border-collapse: collapse;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 700px;
+    font-size: 0.8em;
+
+    caption{
+        caption-side: top;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: white;
+        background-color: green;
+    }
+
+    th{
+        background-color: lightgreen;
+        text-align: center;
+        color: rgb(13, 78, 13);;
+    }
+
+    td{
+        text-align: center;
+        color: rgb(13, 78, 13);
+        padding: 5px;
+    }
+}
+
+tr:nth-child(2) { background-color: rgb(200, 255, 200); }    
+tr:nth-child(4) { background-color: rgb(200, 255, 200); }   
+tr:nth-child(6) { background-color: rgb(200, 255, 200); }   
+
+#formulaires{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 700px;
+    border: 1px solid green;
+}
+
+fieldset{
+    border: 1px solid green;
+    border-radius: 5px;
+
+}
+
+legend{
+    color:white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label{
+    margin-top: 15px;
+
+}
+
+#infos{
+    display: block;
+    width: 680px;
+}
+
+#quiz{
+    display: block;
+    width: 680px;
+
+    label{
+        font-size: 0.8em;
+    }
+
+    p{
+        color: green;
+        font-weight: bold;
+    }
+}
+
+#question{
+    display: block;
+    padding: 10px;
+
+}
+
+input{
+    border: 1px solid green;
+    border-radius: 2px;
+
+}
+
+footer{
+    background-color: #fd96bd; 
+    opacity: 0.6;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
