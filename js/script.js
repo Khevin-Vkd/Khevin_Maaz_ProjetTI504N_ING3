@@ -1,3 +1,5 @@
+import { humorPictures } from "./humorPictures.js";
+
 // Pour le carrousel
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -6,11 +8,29 @@ document.addEventListener('DOMContentLoaded', () => {
       const slides = track.querySelectorAll('.slide');
       const nextButton = carousel.querySelector('.next');
       const prevButton = carousel.querySelector('.prev');
+      const buttonHumor = document.getElementById('boutonHumor');
+      const humor = document.getElementById('humor');
+      console.log(buttonHumor)
 
       let index = 0;
       let autoPlayId;
       const intervalTime = 3000; // NEW: Switch automatically every 3 seconds.
 
+     function updateHumor(humor){
+         humor = humor.trim().toLowerCase();
+          const pictures = humorPictures[humor];
+
+          if (pictures){
+              const img = document.querySelectorAll(".humorPictures");
+              img.forEach((image, index) => {
+                  if (pictures[index]) {
+                      image.src = pictures[index];
+                  }
+              });
+          }else{
+              alert("Humeur invalide ! Vous pouvez saisir : joyeux, triste, degoute, fatigue ou colere.");
+          }
+     }
       function update() {
         // CHANGED: Move by 100% for each complete slide, not 100 / slide count.
         track.style.transform = `translateX(-${index * 100}%)`;
@@ -78,5 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
+      buttonHumor.addEventListener('click', () => {
+          updateHumor(humor.value);
+      });
       startAutoPlay();
     });

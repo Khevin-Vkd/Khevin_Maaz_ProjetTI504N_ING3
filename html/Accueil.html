@@ -5,7 +5,7 @@
     <title>Accueil</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
 
   </head>
 
@@ -35,8 +35,8 @@
             <div class="sous-bloc">
                 <div id="question">
                     <div class="recherche-rangee">
-                        <input class="recherche" type="text" placeholder="Mon humeur" required /><br />
-                        <input id="bouton" type="button" value="Envoyer" />
+                        <input id="humor" class="recherche" type="text" placeholder="Mon humeur" required /><br />
+                        <input id="boutonHumor" type="button" value="Envoyer"  />
                     </div>
                 </div>
             </div>
@@ -44,7 +44,9 @@
 
         <!-- Bloc droit -->
         <div class="bloc-droite">
-            <div class="cadre"></div>
+            <div class="cadre">
+                <img class="humorPictures" src="../img/slay_gurl.jpg">
+            </div>
         </div>
 
     </div>
@@ -57,15 +59,15 @@
 
     <div class="rangee">
         <div class="cadre">
-        <img src="../img/outfit2.jpg" alt="Outfit" />
+        <img class="humorPictures" src="../img/outfit2.jpg" alt="Outfit" />
         </div>
 
         <div class="cadre">
-        <img src="../img/outfit2.jpg" alt="Outfit" />
+        <img class="humorPictures" src="../img/outfit2.jpg" alt="Outfit" />
         </div>
         
         <div class="cadre">
-        <img src="../img/outfit2.jpg" alt="Outfit" />
+        <img class="humorPictures" src="../img/outfit2.jpg" alt="Outfit" />
         </div>
     </div>
 
@@ -73,7 +75,7 @@
         <div class="rangee">
         
         <div class="cadre">
-        <img src="../img/outfit2.jpg" alt="Outfit" />
+        <img class="humorPictures" src="../img/outfit2.jpg" alt="Outfit" />
         </div>
         
         <div class ="recommendation">
@@ -93,7 +95,7 @@
         </div>
             
         <div class="cadre">
-        <img src="../img/outfit2.jpg" alt="Outfit" />
+        <img class="humorPictures" src="../img/outfit2.jpg" alt="Outfit" />
         </div>
         
         
@@ -126,7 +128,6 @@
     <footer>
         <p>©️2026 Khevin Vongkorad</p>
         <p>Tous droits réservés.</p>
-        
     </footer>
 
   </body>
