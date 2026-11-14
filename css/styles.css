@@ -5,6 +5,7 @@ header{
     background-color: #fd96bd; 
     opacity: 0.6;
     height: 70px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -298,6 +299,14 @@ section{
 
 /* Deuxieme page */
 
+    .container_page_2 {
+    padding : 30px ;  
+    display: flex;
+    gap: 10px; /* Espace entre les blocs gauche et droit */
+    height: 80px; /* Hauteur exemple, à adapter */
+    margin-bottom: 20px;
+}
+
     :root{
     --pink:#f48fb6; --block:#f7c9c7; --text:#222; --line:#e6e6e6; --card:#fff;
     --bg1:#f3c6dd; --bg2:#fbe9f1; --bg3:#e8a9cc;
@@ -312,12 +321,13 @@ section{
 
     #section_section{
       display: flex;
-      gap: 10px; /* Espace entre les blocs gauche et droit */
+      gap: 20px; /* Espace entre les blocs gauche et droit */
       margin-bottom: 50px;
+      width: 100%;
     }    
 
     .card{
-    width:800px;
+    width:300px;
     background:white;
     border-radius:6px;
     padding:22px 14px 14px;
@@ -363,7 +373,7 @@ section{
     border-top:1px solid var(--line);
     padding-top:10px;
     margin-top:6px;
-    width:100%;
+    width:270px;
     }
 
     .grid{
@@ -449,6 +459,41 @@ section{
     .view:focus-visible,.star:focus-visible{
     outline:2px solid #c2417a;
     outline-offset:2px
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        padding: 25px;
+        color: white;
+
+    }
+
+    #learn-more{
+    display:block;
+    width:calc(100% - 8px);
+    margin:6px auto 0;
+    padding:11px;border:0;
+    border-radius:3px;
+    width: 30%;
+    background:white;
+    color:var(--pink);
+    padding-bottom: 10px;
+    }
+
+    #learn-more:hover{
+    background:var(--pink);
+    color:white;
+    }
+
+    #outfits_diviseur {
+    background-color: #fd96bd; 
+    opacity: 0.6;
+    height: 180px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 /* */
