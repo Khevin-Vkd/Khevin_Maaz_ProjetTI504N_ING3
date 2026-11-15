@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const prevButton = carousel.querySelector('.prev');
       const buttonHumor = document.getElementById('boutonHumor');
       const humor = document.getElementById('humor');
-      console.log(buttonHumor)
 
       let index = 0;
       let autoPlayId;
@@ -101,5 +100,4 @@ document.addEventListener('DOMContentLoaded', () => {
       buttonHumor.addEventListener('click', () => {
           updateHumor(humor.value);
       });
-      startAutoPlay();
     });

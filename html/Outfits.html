@@ -19,7 +19,7 @@
         <a href="Accueil.html">Accueil</a>
         <a href="GreenITSiteWeb.html">Green IT & Sites web</a>
         <a href="QuizGreenIT.html">Green IT - Quiz</a>
-        <a href="Outifits.html">À propos</a>
+        <a href="Outfits.html">À propos</a>
     </nav>
 </header>
 
@@ -43,8 +43,8 @@
             <div class="head">
                 <h2 class="outfit_h1">Outfit 1</h2>
 
-                <button class="favorite" type="button" aria-label="Ajouter aux favoris">
-                    <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <button class="favorite" type="button" aria-label="Ajouter aux favoris" aria-pressed="false">
+                    <svg class="star off" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 1.8l3 6.9 7.5.7-5.7 5 1.7 7.3L12 17.7 5.5 21.7l1.7-7.3-5.7-5 7.5-.7z"/>
                     </svg>
                 </button>
@@ -320,6 +320,11 @@
     <input type="file" id="zoom-file" accept="image/*" hidden>
     <button id="zoom-close" type="button">Fermer</button>
     <button id="changePhoto" type="button">Changer</button>
+</dialog>
+
+<dialog id="view-dialog">
+    <div id="view-content"></div>
+    <button id="view-close" type="button">Fermer</button>
 </dialog>
 
 <footer>

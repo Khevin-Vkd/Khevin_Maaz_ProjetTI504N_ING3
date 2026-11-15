@@ -17,7 +17,7 @@ export const humorPictures = {
         "../img/Sadness_png.webp",
         "../img/Sadness_png.webp",
     ],
-    degout : [
+    degout: [
         "../img/Disgust_png.webp",
         "../img/Disgust_png.webp",
         "../img/Disgust_png.webp",
