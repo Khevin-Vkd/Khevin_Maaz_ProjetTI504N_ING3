@@ -397,11 +397,11 @@ section{
     margin:0 0 6px 2px
 }
 
-.outfit_section{
-    border-top:1px solid var(--line);
-    padding-top:10px;
-    margin-top:6px;
-    width:270px;
+.outfit_section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0 0;
+    margin: 6px 0 0;
 }
 
 .grid{
@@ -667,8 +667,80 @@ nav{
 
 }
 
+.image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    cursor: grab;
+}
 
+.box_drag_n_drop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 150px;
+    width: min(100%, 1000px);
+    margin: 15px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border: #4a1230;
+    background: rgba(255, 255, 255, 0.6);
+}
 
+.box_drag_n_drop h4 {
+    width: 100%;
+    margin: 0;
+}
+
+.box_drag_n_drop.drag-over {
+    background: var(--block);
+}
+
+.in-collection {
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#new-collection {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background: var(--pink);
+    color: white;
+    cursor: pointer;
+}
+
+#new-collection:hover {
+    filter: brightness(0.9);
+}
+
+.box_drag_n_drop {
+    position: relative;   /* à ajouter à ta règle existante */
+}
+
+.delete-box {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--pink);
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.delete-box:hover {
+    filter: brightness(0.9);
+}
 footer{
     background-color: #c2417a;
     opacity: 0.6;
@@ -677,4 +749,17 @@ footer{
     margin-right: auto;
     color: white;
 
+}
+
+.section_section {
+    width: min(100%, 1100px);
+    box-sizing: border-box;
+}
+
+.card {
+    box-sizing: border-box;
+}
+.card.is-fav {
+    order: -1;
+    box-shadow: 0 0 0 3px var(--pink), 0 6px 24px rgba(120, 40, 80, .3);
 }

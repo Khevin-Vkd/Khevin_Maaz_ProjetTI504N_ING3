@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <link rel= "stylesheet" href="../css/styles.css">
-    <title>Clothes</title>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="../js/script.js"></script>
+    <title>Clothes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/clothes.js" defer></script>
+</head>
 
-  </head>
+<body>
 
-  <body>
-    
-    <header>
+<header>
+    <nav>
+        <a href="Accueil.html">Accueil</a>
+        <a href="Clothes.html">Clothes</a>
+        <a href="Outfits.html">Outfits</a>
+    </nav>
+</header>
 
-        <nav>
-            <a href="Accueil.html">Accueil</a>
-            <a href="GreenITSiteWeb.html">Green IT & Sites web</a>
-            <a href="QuizGreenIT.html">Green IT - Quiz</a>
-        </nav>
+<section id="clothes_diviseur">
+    <h3 id="wardrobe">Your wardrobe</h3>
+    <p>Creating new outfits has never been easier! <br> Use the drag and drop feature to arrange your clothes and create unique looks.</p>
+</section>
 
-    </header>
+<section id="drag_drop">
+    <h3 id="pictures">All pictures uploaded</h3>
 
-    <section id="clothes_diviseur">
-        <h3 id="wardrobe">Your wardrobe</h3>
-
-        <p>Creating new outfits has never been easier! <br> Use the drag and drop feature to arrange your clothes and create unique looks.</p>
-
-    </section>
-
-    <section id="drag_drop">
-        <h3 id="pictures">All pictures uploaded</h3>
-        <p>Creating new outfits has never been easier! <br> Use the drag and drop feature to arrange your clothes and create unique looks.</p>
-
-        <div class="diviseur-carrousel">   
-            <img class="image" src="../img/outfit2.jpg" alt="Outfit" />
-            <img class="image" src="../img/outfit2.jpg" alt="Outfit" />
-            <img class="image" src="../img/outfit2.jpg" alt="Outfit" />
-        </div>
-        
-    </section>
-
-    <div class="box_drag_n_drop">
-        <h4>Your collection</h4>
+    <div class="diviseur-carrousel">
+        <img class="image" id="img1" src="../img/outfit2.jpg" alt="Outfit 1" draggable="true">
+        <img class="image" id="img2" src="../img/outfit2.jpg" alt="Outfit 2" draggable="true">
+        <img class="image" id="img3" src="../img/outfit2.jpg" alt="Outfit 3" draggable="true">
     </div>
+</section>
 
-    <footer>
-        <p>©️2026 Khevin Vongkorad</p>
-        <p>Tous droits réservés.</p>
-        
-    </footer>
+<section id="collections">
+    <div class="box_drag_n_drop">
+        <h4>Collection 1</h4>
+    </div>
+</section>
 
-  </body>
+<button id="new-collection" type="button">Nouvelle collection</button>
+
+<footer>
+    <p>&copy; 2026 Khevin Vongkorad</p>
+    <p>Tous droits réservés.</p>
+</footer>
+
+</body>
 </html>

@@ -23,9 +23,23 @@ document.querySelectorAll('.add').forEach((bouton) => {
     });
 });
 
+const premiereLigne = document.querySelector('.section_section');
+document.querySelectorAll('.section_section').forEach((ligne, i) => {
+    if (i > 0) {
+        premiereLigne.append(...ligne.querySelectorAll('.card'));
+        ligne.remove();
+    }
+});
+
 document.querySelectorAll('.favorite').forEach((bouton) => {
+    const etoile = bouton.querySelector('.star');
+    etoile.classList.add('off');
+    bouton.setAttribute('aria-pressed', 'false');
+
     bouton.addEventListener('click', () => {
-        bouton.querySelector('.star').classList.toggle('off');
+        const estFav = bouton.closest('.card').classList.toggle('is-fav');
+        etoile.classList.toggle('off', !estFav);
+        bouton.setAttribute('aria-pressed', estFav);
     });
 });
 
