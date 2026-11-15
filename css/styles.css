@@ -487,17 +487,44 @@ section{
     color:white;
     }
 
-    #outfits_diviseur {
+    #clothes_diviseur {
     background-color: #fd96bd; 
     opacity: 0.6;
+    margin-top: 1px;
+    border-radius: 0px;
     height: 180px;
-    width: 100%;
+    width: 1010px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
     }
 
-/* */
+    #wardrobe { 
+        color: white;
+        font-size: 30px;
+        padding-top: 20px;
+    }
 
+
+
+/* Page 3 : Clothes */
+
+    .diviseur-carrousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 200px;
+    padding: 15px;
+    }
+
+
+/* */
 #conseils{
 
     h3{
