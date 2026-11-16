@@ -6,10 +6,8 @@ export const humorPictures = {
         "../img/Joy_png.webp",
         "../img/Joy_png.webp",
         "../img/Joy_png.webp",
-        "../img/Joy_png.webp",
     ],
     triste : [
-        "../img/Sadness_png.webp",
         "../img/Sadness_png.webp",
         "../img/Sadness_png.webp",
         "../img/Sadness_png.webp",
@@ -24,7 +22,6 @@ export const humorPictures = {
         "../img/Disgust_png.webp",
         "../img/Disgust_png.webp",
         "../img/Disgust_png.webp",
-        "../img/Disgust_png.webp",
     ],
     colere : [
         "../img/Anger_png.webp",
@@ -33,10 +30,8 @@ export const humorPictures = {
         "../img/Anger_png.webp",
         "../img/Anger_png.webp",
         "../img/Anger_png.webp",
-        "../img/Anger_png.webp",
     ],
     fatigue : [
-        "../img/Fear_png.webp",
         "../img/Fear_png.webp",
         "../img/Fear_png.webp",
         "../img/Fear_png.webp",

@@ -44,7 +44,6 @@ function activerZone(box) {
         const original = document.getElementById(e.dataTransfer.getData('text/plain'));
         if (!original) return;
 
-        // Copie : l'image reste dans la sélection
         const copie = original.cloneNode();
         copie.removeAttribute('id');
         copie.removeAttribute('draggable');
